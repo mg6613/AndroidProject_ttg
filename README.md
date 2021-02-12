@@ -1,8 +1,10 @@
 # 안드로이드 스튜디오를 이용한 주소록 앱
 
 
+
 ## 이슈 탭에서 개발 화면을 확인할 수 있습니다.    
 https://github.com/mg6613/AndroidProject_ttg/issues/1
+
 
 
 
