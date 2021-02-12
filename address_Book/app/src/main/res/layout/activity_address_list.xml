@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Address_Book.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DA445AEE"
+            app:popupTheme="@style/Theme.Address_Book.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0px"-->
+<!--        android:layout_weight="5"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <include layout="@layout/content_address_list" />-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        >
+        <!-- 연락처 등록 플로팅 버튼 -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="@dimen/right_margin"
+            app:srcCompat="@drawable/ic_floating_addpeople"
+            tools:ignore="VectorDrawableCompat"
+            android:backgroundTint="#DA445AEE"
+            />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        app:itemTextColor="#202020"
+        app:menu="@menu/bottom_nav"
+        android:layout_weight="0.7"/>
+
+</LinearLayout>

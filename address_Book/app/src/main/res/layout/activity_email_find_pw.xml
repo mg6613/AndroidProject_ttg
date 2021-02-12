@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.address_book_Activity.EmailFindPWActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backBtn_emailfindPw"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:layout_margin="20dp"
+            android:background="@drawable/main_bg"
+            android:textColor="@color/white"
+            android:text="back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sendNum_emailfindPw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="인증코드"
+                android:textSize="18dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/gray_bg"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/time_emailfindPw"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_msg_emailfindPw"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/red"
+        />
+    <Button
+        android:id="@+id/btnFindPw_emailfindPw"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/main_bg"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="확인" />
+</LinearLayout>

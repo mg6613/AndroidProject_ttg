@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.address_book_Activity.ModifyPeopleActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="top">
+
+        <Button
+            android:id="@+id/btn_backToViewPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/main_bg"
+            android:text="back"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_updatePeople"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/main_bg"
+            android:text="수정"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+        <WebView
+            android:id="@+id/iv_editPeopleImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/title_layout"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+        <TextView
+            android:id="@+id/tv_editPeopleImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="사진 편집"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_peopleName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="test 입니다 test"
+            android:textSize="15dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:background="@drawable/gray_bg"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_peoplePhone"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="9"
+            android:text="전화번호 입력 창입니다"
+            android:inputType="phone"
+            android:textSize="15dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:background="@drawable/gray_bg"
+            />
+            <Button
+                android:id="@+id/addUpdateTelNoButton"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:text="+"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@drawable/main_bg"
+                android:textColor="@color/white"
+
+                />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/update_phonenum_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_layout"
+        android:layout_margin="10dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_peopleEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gray_bg"
+            android:gravity="left|center"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:text="email 수정창입니다."
+            android:textSize="15dp" />
+            <Spinner
+                android:id="@+id/edit_spinner_relation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"
+                />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_peopleMemo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="testtesttesttesttest"
+        android:textSize="15dp"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:background="@drawable/gray_bg"
+        android:layout_margin="10dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#FFFFFF"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

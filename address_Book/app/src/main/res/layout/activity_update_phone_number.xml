@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:hint="전화번호 입력"
+            android:inputType="phone"
+            android:gravity="right|center"
+            android:paddingRight="15dp"
+            android:background="@drawable/gray_bg"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editPhone2"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:hint="전화번호 입력"
+            android:inputType="phone"
+            android:gravity="right|center"
+            android:paddingRight="15dp"
+            android:background="@drawable/gray_bg"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editPhone3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:hint="전화번호 입력"
+            android:inputType="phone"
+            android:gravity="right|center"
+            android:paddingRight="15dp"
+            android:background="@drawable/gray_bg"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editPhone4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:hint="전화번호 입력"
+            android:inputType="phone"
+            android:gravity="right|center"
+            android:paddingRight="15dp"
+            android:background="@drawable/gray_bg"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

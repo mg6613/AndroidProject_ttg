@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.address_book_Activity.MypagePWActivity02"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/backBtn_changePW2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:layout_margin="20dp"
+            android:background="@drawable/main_bg"
+            android:textColor="@color/white"
+            android:text="back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 변경"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutnewPw_mypagePW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newPW_changePW2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="새로운 비밀번호운(8자리 이상)"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@drawable/gray_bg"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutnewPwcheck_mypagePW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newPWcheck_changePW2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="비밀번호 확인"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@drawable/gray_bg"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_fieldCheck_changePW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/red"
+        />
+
+    <Button
+        android:id="@+id/btnNextChangePW_changePW2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/main_bg"
+        android:textColor="@color/white"
+        android:text="확 인"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.address_book_Activity.ViewPeopleActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <Button
+            android:id="@+id/btn_backToList"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/main_bg"
+            android:text="back"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_edit_addressView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:text="편집"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/main_bg"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+      >
+        <WebView
+            android:id="@+id/iv_viewPeople"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/btn_view_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            />
+        <ImageButton
+            android:id="@+id/btn_view_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            />
+        <ImageButton
+            android:id="@+id/btn_view_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            />
+        <ImageButton
+            android:id="@+id/btn_view_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/view_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="test 22dp 입니다"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/gray_bg"
+
+                 />
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/view_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="test 입니다"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/view_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="test 입니다"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/view_relation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="testtesttesttesttest"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/view_memo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="testtesttesttesttest"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:enabled="false"
+                android:background="@drawable/gray_bg"
+                android:textColor="@color/black"
+                />
+            <!--<Spinner
+                android:id="@+id/spinner_relation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                /> -->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+</LinearLayout>

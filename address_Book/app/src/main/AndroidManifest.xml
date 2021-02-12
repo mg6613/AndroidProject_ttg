@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.address_book">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:descendantFocusability="blocksDescendants"
+        android:icon="@mipmap/ic_launcher"
+        android:label="사소한"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Address_Book"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.android.address_book_Activity.PhoneFindPWActivity" />
+        <activity android:name="com.android.address_book_Activity.EmailFindPWActivity" />
+        <activity android:name="com.android.address_book_Activity.JoinActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.android.address_book_Activity.MypagePWActivity02" />
+        <activity android:name="com.android.address_book_Activity.MypagePWActivity01" />
+        <activity android:name="com.android.address_book_Activity.ModifyPeopleActivity" />
+        <activity android:name="com.android.address_book_Activity.RegisterPeopleActivity" />
+        <activity
+            android:name="com.android.address_book_Activity.AddressListActivity"
+            android:theme="@style/Theme.Address_Book.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.android.address_book_Activity.FindPWActivity" />
+        <activity android:name="com.android.address_book_Activity.FindIDActivity" />
+        <activity android:name="com.android.address_book_Activity.ViewPeopleActivity" />
+        <activity android:name="com.android.address_book_Activity.MainActivity" />
+        <activity android:name="com.android.address_book_Activity.IntroViewStart" />
+        <activity android:name="com.android.address_book_Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

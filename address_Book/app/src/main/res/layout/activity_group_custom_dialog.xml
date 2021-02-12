@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/groupAdd_menu"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="그룹명"
+            android:maxLength="10"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/gray_bg"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="취소"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/main_bg"
+            />
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="확인"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/main_bg"
+            />
+
+    </LinearLayout>
+</LinearLayout>
