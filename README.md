@@ -1,19 +1,11 @@
 # 안드로이드 스튜디오를 이용한 주소록 앱
 
-
-
-## 이슈 탭에서 개발 화면을 확인할 수 있습니다.    
-https://github.com/mg6613/AndroidProject_ttg/issues/1
-
-
-
-
 ## 사소한(사람들의 소중한 주소록)
 제작자 : 김대환, 박경미, 박인영, 송예진, 유민규
-
-
-
-
+---
+## 이슈 탭에서 개발 화면을 확인할 수 있습니다.    
+https://github.com/mg6613/AndroidProject_ttg/issues/1
+---
 ### G-Email 인증 시 설정
  1. libs 폴더에 아래 3개 jar 파일 추가
     1. activation.jar
